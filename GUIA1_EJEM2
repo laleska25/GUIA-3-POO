@@ -1,0 +1,34 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+int main()   {
+
+//Declaracion de variables
+  float radio;
+  float altura;
+  float areabase;
+  float arealateral;
+  float areatotal;
+
+//Entrada de datos
+  cout<<"Ingresar radio:";
+  cin>>radio;
+  cout<<"Ingresar altura:";
+  cin>>altura;
+
+//Proceso - Algoritmos
+  areabase= 3.1416 * pow(radio,2);
+  arealateral= 2 * 3.1416 * radio * altura;
+  areatotal= 2 * areabase + arealateral;
+
+//Salida de resultados
+  cout<<"El resultado del area base es:"<<areabase;
+  cout<<"\n";
+  cout<<"El resultado del area lateral es:"<<arealateral;
+  cout<<"\n";
+  cout<<"El resultado del area total es:"<<areatotal;
+
+return 0;
+
+  }
